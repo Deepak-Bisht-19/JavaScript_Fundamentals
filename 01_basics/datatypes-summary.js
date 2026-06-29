@@ -45,3 +45,31 @@ const myFunction = function() {
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+
+
+// *******************************Memory allocation in javascript*******************************
+
+//  Stack (primitive data types), heap (non-primitive data types)
+
+let myName = "deepak"  // stored in stack memory because it is primitive data type
+
+let anotherName = myName  
+anotherName = "bsiht"  // changing anotherName will not change myName because they are stored in different memory locations
+
+console.log(myName)  // deepak
+console.log(anotherName)  // bsiht
+
+
+let userOne = {  // stored in heap memory because it is non-primitive data type
+    name: "deepak",
+    age: 22
+}
+
+let userTwo = userOne  // both userOne and userTwo point to the same memory location in heap memory
+userTwo.age = 23  // changing userTwo will also change userOne because they are stored in the same memory location
+
+console.log(userOne.age)  // 23
+console.log(userTwo.age)  // 23
