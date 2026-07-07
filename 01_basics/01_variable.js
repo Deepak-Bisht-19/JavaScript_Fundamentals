@@ -18,7 +18,7 @@ accountCity = "newcity";
 
 /*
 prefer not to use var 
-because of issue with block scope and and fumction scope
+because of issue with block scope and function scope
 */
 
 // console.log([accountId, accountEmail, accountPassword, accountCity, accountState]);
